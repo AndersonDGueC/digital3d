@@ -11,23 +11,23 @@ se comienza a asignar algunos atributos-->
     y estructuras que ire definiendo-->
     <body>
         <main><!--definir un panorama principla-->
-        <header class="borde">
+        <header class="borde" id="cabecera">
             <img src="img/logo.png">
         </header><!--cabecera de la pagina  -->
-        <nav class="borde">
-           <a href="#">CEO</a> <!--nos enlace a un link o seccion-->
+        <nav class="borde" id="menu">
+           <a href="#" class="menu_activo">CEO</a> <!--nos enlace a un link o seccion-->
            <a href="#">Nueva Empresa</a>
            <a href="#">Cotizador</a>    
         </nav><!--pestañas donde voy ha navegar-->
-        <section >
+        <section id="sec1">
             <article class="borde">
               <img src="img/unnamed.jpg">      
             </article><!--contenido de la pagina texto imag etc-->
-            <article class="borde">
-                <h1>Hola, <i>soy Carlos David Pérez</i></h1><!--titulos entre mas pequeño el numero mas grnade la letra-->
+            <article class="borde" id="art1">
+                <h1 id="qsoy">Hola, <i>soy Carlos David Pérez</i></h1><!--titulos entre mas pequeño el numero mas grnade la letra-->
                 <!--italica<i>-->
-                    <small>Y SOY UN DISEÑADOR GRÁFICO</small><!--letra mas pequeña-->
-                    <hr><!--una linea de separacion-->
+                    <small id="small_d">Y SOY UN DISEÑADOR GRÁFICO</small><!--letra mas pequeña-->
+                    <hr id="line"><!--una linea de separacion-->
                     <p>¡Hola! Si estás aquí, es porque quieres saber un poco más sobre mí, por eso, te voy a contar un poco quién soy, a qué me dedico, y cómo te puedo ayudar.</p>
 
                       <p>  Nací en Barcelona capital, aunque he vivido toda la vida fuera pero muy cerca de ella.</p> 
@@ -38,37 +38,62 @@ se comienza a asignar algunos atributos-->
                     </p>
             </article>    
         </section><!--agrupar un conjunto de elementos que definan reginones de mi pagina-->
-        <section class="borde">
+        <section class="borde" id="sec2">
             <h2>¿A qué me dedico?</h2>
-            <hr>
+            <hr id="line2">
             <p>Actualmente, me dedico profesionalmente al diseño web con WordPress a tiempo completo. Es un trabajo que me encanta y que me permite disfrutar, por fin, de pasar horas y horas delante del ordenador, cosa que nunca antes me había sucedido.</p>
  
               <p>  A lo largo de este tiempo, he podido trabajar con más de 30 clientes de alrededor del país y del mundo, y he creado y diseñado más de 60 webs, gracias a lo cual he ido mejorando cada día más, perfeccionando la técnica y la creatividad a la hora de realizar nuevos proyectos.</p>
                  
                <p> Realizo webs para particulares y empresas, sin importar su tamaño, aunque también colaboro directamente con agencias que necesitan externalizar el diseño web y deciden contar conmigo para crear las webs de sus clientes. Sea cual sea tu caso, no dudes en contactarme.</p>
         </section>
-        <section class="borde">
-            <h1>¿Cómo puedo ayudarte</h1>
+        <section class="borde" id="sec3">
+            <h1>¿Cómo puedo ayudarte?</h1>
+            <div id="servicios"> 
             <article class="borde">
                 <h2>Diseño Litográfico</h2>
                 <p>Nuestros servicios profesionales enfocados al diseño e impresión litográfica, nuestra maquinaria, como nuestro equipo de profesionales en las artes gráficas nos permite realizar grandes producciones con altos estándares de calidad.</p>
-                <button>ver servicio</button>
+                <button class="btn1">ver servicio</button>
             </article>
-            <article class="borde">
+            
+            <article class="borde" id="artm">
                 <h2>Diseño tienda online</h2>
                 <p>Te creo y diseño una tienda online completamente funcional con WordPress y WooCommerce para que puedas comenzar a vender tus productos. Da igual que tenga pocos o miles de productos.</p>
-                <button>ver servicio</button>
+                <button class="btn1">ver servicio</button>
             </article>
             <article class="borde">
                 <h2>Mantenimiento web</h2>
                 <p>Me encargo de tener tu web hecha con WordPress al día y sin problemas, manteniéndola actualizada, optimizada, creando copias de seguridad, solucionando los problemas que vayan surgiendo, etc.</p>
-                <button>ver servicio</button>
+                <button class="btn1">ver servicio</button>
             </article>
+            </div>
         </section>
-        <section class="borde">
-
+        <section class="borde"  id="sec4">
+            
+            <h1>Herramientas de mi dominio</h1>
+            <table border="1" id="tabla_1"><!--crear tabla-->
+                <thead>
+                    <tr>
+                        <th>Photoshop</th><!--creacion de celdas-->
+                        <th>Ilustrator</th>
+                        <th>CorelDraw</th>
+                    </tr><!--crear una fila-->
+                </thead><!--cabecera de la tabla-->
+                <tbody>
+                    <tr>
+                        <td><img src="img/Adobe_Photoshop_CS5_icon.png" width:"100" height="100" class="image1"></td><!--contenido de celda normal no resaltado-->
+                        <td><img src="img/200px-Illustrator_CC_icon.png" width:"100" height="100" class="image1"></td>
+                        <td><img src="img/corel.png" width:"100" height="100" class="image1"></td>
+                    </tr>
+                    
+                </tbody><!--diferentes filas que se crearan-->
+            </table>
+            
         </section>
-        <footer></footer><!--finaliza la pagina, pie de pagina-->        
         </main>
+        <footer id="pie_pag">
+            <p>Copyright (©) | Medellin - <a href="https://www.antioquia.gov.co/" target="_blank">Antioquia</a>, Colombia | Nuestra Empresa | Contacto</p>
+        </footer><!--finaliza la pagina, pie de pagina-->        
+        
     </body><!-- contendio de la pagina-->
 </html>
